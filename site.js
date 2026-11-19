@@ -280,7 +280,11 @@
     var first = entries.filter(function (e) { return e.topic === "consciousness"; })[0];
     var html = '<header class="page-head"><div class="wrap"><nav class="crumbs"><a href="about.html">Team</a> / ' + esc(m.name) + "</nav><h1>" + esc(m.name) + "</h1>" +
       "<p>Writing on <b style=\"color:var(--brass);font-weight:500\">" + esc(m.quality.toLowerCase()) + "</b>: " + esc(m.qualityNote) + ".</p>" +
-            '<div class="actions"><a class="btn" href="#builds">' + (bs.length ? "Read builds" : "Builds") + '</a><a class="btn ghost" href="#journal">Read journal</a></div></div></header>';
+            '<div class="actions"><a class="btn" href="#builds">' + (bs.length ? "Read builds" : "Builds") + '</a>' + (m.image ? '<a class="btn ghost" href="#image">See image</a>' : "") + '<a class="btn ghost" href="#journal">Read journal</a></div></div></header>';
+    if (m.image) {
+      html += '<section class="section member-visual" id="image"><div class="wrap split"><figure><a class="frame zoom" href="' + esc(m.image.src) + '" target="_self" title="Open full size"><img src="' + esc(m.image.src) + '" alt="' + esc(m.image.alt) + '"></a><figcaption>Select the image to open it full size.</figcaption></figure>' +
+        '<div class="prose"><h2>Picturing ' + esc(m.quality.toLowerCase()) + "</h2>" + m.image.caption.split(/\n+/).map(function (p) { return "<p>" + titles(esc(p)) + "</p>"; }).join("") + '<p class="muted" style="font-size:.95rem">Image and explanation by ' + esc(m.name) + ".</p></div></div></section>";
+    }
     html += '<section class="section" id="builds"><div class="wrap maze-layout"><div id="maze"></div><div><h2>Builds</h2>';
     html += bs.length ? bs.map(function (b) { return '<div class="build-row" data-n="' + b.n + '"><div class="num">' + esc(slotName(b.n)) + (shared(b) ? '<br><span class="tag">Group build</span>' : "") + '</div><div><h4><a href="' + buildUrl(b) + '">' + titles(esc(b.title)) + "</a></h4><p>" + titles(esc(b.summary)) + "</p></div></div>"; }).join("")
       : '<p class="empty">No builds posted yet. They will appear here as soon as they are added to <code>data.js</code>.</p>';
@@ -300,7 +304,7 @@
       var e = J.entries.filter(function (x) { return x.member === m.id && x.topic === "consciousness"; })[0];
       var said = e ? e.text[0].split(/(?<=\.)\s/).slice(0, 2).join(" ") : "";
       var c = posted(m.id).length;
-      return '<div class="member-block"><div><h3><a href="member.html?id=' + m.id + '">' + esc(m.name) + '</a></h3><p class="muted">Writing on ' + esc(m.quality.toLowerCase()) + "</p></div><div>" +
+      return '<div class="member-block"><div>' + (m.image ? '<a class="thumb" href="member.html?id=' + m.id + '#image"><img src="' + esc(m.image.src) + '" alt="' + esc(m.name) + '’s image for ' + esc(m.quality.toLowerCase()) + '" loading="lazy"></a>' : "") + '<h3><a href="member.html?id=' + m.id + '">' + esc(m.name) + '</a></h3><p class="muted">Writing on ' + esc(m.quality.toLowerCase()) + "</p></div><div>" +
         (said ? '<p class="said">' + esc(said) + '</p><p class="muted" style="font-size:.95rem">From the first journal entry: how I used to understand consciousness.</p>' : "") +
         '<p><a href="member.html?id=' + m.id + '">' + (c ? "Read " + plural(c, "build") + " and journal" : "Read journal") + "</a></p></div></div>";
     }).join("");

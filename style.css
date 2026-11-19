@@ -299,3 +299,15 @@ a[target="_blank"]::after { content: ""; display: inline-block; width: 0.6em; he
 .reveal-kicker { color: var(--glow); margin-bottom: 0.75rem; }
 .reveal-quote { margin: 0 0 0.75rem; font-family: var(--display); font-size: 1.45rem; line-height: 1.4; color: var(--bone); }
 .reveal-quote::before { content: "“"; color: var(--brass); } .reveal-quote::after { content: "”"; color: var(--brass); }
+
+/* ---------- Member images ---------- */
+.member-visual { border-top: 1px solid var(--line); }
+.member-visual .split { align-items: start; }
+.member-visual figure { position: sticky; top: 5.5rem; }
+.frame.zoom { display: block; cursor: zoom-in; }
+.frame.zoom img { width: 100%; height: auto; }
+.frame.zoom:hover { border-color: var(--brass); }
+.thumb { display: block; margin-bottom: 1rem; border: 1px solid var(--line); padding: 0.35rem; background: var(--night-2); max-width: 14rem; }
+.thumb img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.thumb:hover { border-color: var(--brass); }
+@media (max-width: 860px) { .member-visual figure { position: static; } }

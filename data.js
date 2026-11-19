@@ -27,37 +27,67 @@ window.SITE = {
       "id": "emily",
       "name": "Emily Kim",
       "quality": "Phenomenality",
-      "qualityNote": "the felt quality of experiencing itself, or “what it’s like to be me”"
+      "qualityNote": "the felt quality of experiencing itself, or “what it’s like to be me”",
+      "image": {
+        "src": "emily-image.jpg",
+        "alt": "A figure woven from golden threads stands beside a circular Celtic-knot maze that tightens toward a glowing spiral at its center. Threads run from the figure to a carpet, a chair and a tattooed hand at the edges.",
+        "caption": "The maze that is in the center gradually becomes more intertwined as you go to the center. This complexity is shown through the intricacy of the gold lines that are shown. Not only that, these small threads connecting to the maze are connected to not only the person’s mind and body, but the carpet, the chair, and the tattooed hand. Specifically, the human body is made out of these golden threads, which shows how they are a product of these connections. The tattooed hand and the patterned carpet share Gell’s comment on complex patterns, while the chair is a personification of Scarry’s work. Finally, at the center there is a serpent that represents Milton’s connection to Gell’s work touching on the themes of deception."
+      }
     },
     {
       "id": "sakib",
       "name": "Sakib Hussain",
       "quality": "Deliberation",
-      "qualityNote": "the conscious comparison of multiple possible interpretations over time"
+      "qualityNote": "the conscious comparison of multiple possible interpretations over time",
+      "image": {
+        "src": "sakib-image.jpg",
+        "alt": "A sketched person sits inside a many-sided maze as golden arrows branch out from their head toward different paths, with a small snake coiled along one branch.",
+        "caption": "I created this image using Gemini to visually represent my argument from Builds 3–5 about deliberation, consciousness, and the struggle between external influences and personal choice. The person sitting inside the maze represents consciousness, while the branching pathways represent the different interpretations and possibilities that a person must consider before making a decision. This connects to Gell's Art and Agency, where complex patterns capture our attention and create cognitive obstacles that encourage us to reconsider what we see. I wanted the maze to show that deliberation involves more than simply reacting to these patterns; it requires recognizing their influence and consciously questioning which path to follow. I also included a snake along one of the branches to connect my argument to Milton's Paradise Lost, where Satan, disguised as a serpent, influences Eve's decisions through temptation. The snake represents how external influences can shape our choices even when we believe we are acting freely. By having the pathways extend outward from the person's mind, I wanted to emphasize my central argument: consciousness is not just about recognizing different possibilities, but about understanding what influences our decisions and whether we can truly control them."
+      }
     },
     {
       "id": "alejandro",
       "name": "Alejandro De Rueda Diaz",
       "quality": "Reflexivity",
-      "qualityNote": "the awareness that one is aware of something, or becoming conscious of one’s own process of thinking or perceiving"
+      "qualityNote": "the awareness that one is aware of something, or becoming conscious of one’s own process of thinking or perceiving",
+      "image": {
+        "src": "alejandro-image.jpg",
+        "alt": "A profile of a head whose brain is drawn as a golden maze, facing a framed mirror that repeats the same head and maze-brain again and again into the distance.",
+        "caption": "This image portrays a person whose brain is shaped like a maze recursively observing himself, illustrating the aspect of consciousness of reflexivity. The image of the observer being captivated by the maze pattern in his own brain reflects the idea of how decorated surfaces may influence one into being aware of one’s awareness."
+      }
     },
     {
       "id": "nidhi",
       "name": "Nidhi Pandya",
       "quality": "Reconsolidation",
-      "qualityNote": "altering one’s sense of continuity by selecting past experiences, present circumstances or future projections to navigate changes in who one is"
+      "qualityNote": "altering one’s sense of continuity by selecting past experiences, present circumstances or future projections to navigate changes in who one is",
+      "image": {
+        "src": "nidhi-image.jpg",
+        "alt": "A luminous figure stands among drifting photographs, letters and keepsakes, with glowing branch-like threads spreading from their body toward other figures who hold the patterned design on the central figure’s arm.",
+        "caption": "My principal argument centered on reconsolidation and how our identities can continue to be shaped beyond our biological lives. I discussed this idea through Gell's concept of material traces and how objects can preserve aspects of a person's identity after death. In the image, the photographs and objects represent past experiences and memories, while the branching threads represent how these experiences can influence the future. The central figure represents consciousness selecting what is carried forward, while the other figures show how a person's identity and choices can continue to influence others even after they are gone. Additionally, the design on the central figure’s arm, which is then held by other figures on the right side, is meant to represent the kolam tattoos and the way that they carry on a person’s legacy through the way others continue to interact with them."
+      }
     },
     {
       "id": "leah",
       "name": "Leah Barnocki",
       "quality": "Phenomenality",
-      "qualityNote": "the first-person experience of encountering an artwork, at once sensory, emotional and mental"
+      "qualityNote": "the first-person experience of encountering an artwork, at once sensory, emotional and mental",
+      "image": {
+        "src": "leah-image.jpg",
+        "alt": "A weaver works on a patterned tapestry while a woman beside it looks at the weaving, with ribbons of color and small images streaming between maker, artwork and viewer.",
+        "caption": "Agency originates in the creator, becomes materially embedded in the artwork, and is encountered and transformed through the viewer's phenomenological experience. The artwork is not an autonomous subject but a mediator of an ongoing, unfinished relationship between creator and viewer. Perception of an artwork is unique to an individual, and the emotions, thoughts, and takeaways they receive are dependent on their life and phenomenological experience."
+      }
     },
     {
       "id": "robert",
       "name": "Robert James",
       "quality": "Narration",
-      "qualityNote": "coordinating successive experiences into a sequence organized around a purpose"
+      "qualityNote": "coordinating successive experiences into a sequence organized around a purpose",
+      "image": {
+        "src": "robert-image.jpg",
+        "alt": "A young man seen from behind, with a serpent coiled around his shoulders whispering in his ear, stands where a glowing path splits in two: one way winds through a patterned labyrinth with figures retracing their steps, the other runs over cracked, mirrored tiles toward a glowing apple and a distant temple, while faces in profile look on from above.",
+        "caption": "This image illustrates how narration allows consciousness to connect past experiences with imagined futures, influencing present decisions. The labyrinth represents Gell’s patterns, where repeated failures encourage further inquiry, while the serpent symbolizes Satan’s influence on Eve, showing how external persuasion can create mistaken expectations. The two paths demonstrate that narration can either sustain the pursuit of understanding or produce confidence without genuine knowledge."
+      }
     }
   ],
   "slots": [
