@@ -170,7 +170,7 @@
           var b = build(m.id, slot.n);
           if (q) {
             if (!b) return;
-            var hay = [b.title, b.summary].concat(b.paragraphs, b.bibliography || []).join(" ");
+            var hay = [b.title, b.summary].concat(b.paragraphs, b.bibliography || [], (b.contributions || []).map(function (c) { return c.text; })).join(" ");
             if (!matches(hay, q)) return;
           }
           shown += b ? 1 : 0;
@@ -211,6 +211,7 @@
       '<p class="muted">' + titles(esc(b.summary)) + "</p>" +
       '<div class="tools"><button type="button" id="copy-link">Copy link</button><button type="button" id="size-up" aria-label="Larger text">Larger text</button><button type="button" id="size-down" aria-label="Smaller text">Smaller text</button>' + (q ? '<a class="btn ghost" href="' + buildUrl(b) + '">Clear highlights</a>' : "") + "</div></header>" +
       '<article class="essay" id="essay">' + b.paragraphs.map(function (p, i) { return para(p, q).replace(/^<(p|blockquote)>/, '<$1 id="p' + (i + 1) + '">'); }).join("") + "</article>" +
+      (b.contributions ? '<section class="contribs" id="contributions"><h2>Individual contributions</h2><p class="muted">Each member’s own paragraph, written before we combined them into the essay above.</p>' + b.contributions.map(function (c) { var cm = member(c.member); return '<div class="contrib" id="contrib-' + c.member + '"><h3><a href="member.html?id=' + c.member + '">' + esc(cm.name) + '</a> <span class="muted">on ' + esc(cm.quality.toLowerCase()) + "</span></h3>" + para(c.text, q) + "</div>"; }).join("") + "</section>" : "") +
       (b.bibliography ? '<details class="biblio"' + (q && matches(b.bibliography.join(" "), q) ? " open" : "") + '><summary>Bibliography (' + b.bibliography.length + " sources)</summary><ul>" + b.bibliography.map(function (e) { return "<li>" + mark(esc(e), q) + "</li>"; }).join("") + "</ul></details>" : "") +
       '<nav class="pager" aria-label="More builds by ' + esc(m.name) + '">' +
       (prev ? '<a class="prev" href="' + buildUrl(prev) + '"><small>Previous build</small>' + titles(esc(prev.title)) + "</a>" : "") +
@@ -318,6 +319,8 @@
     S.members.forEach(function (m) { if (matches(m.name + " " + m.quality, q)) res.push({ kind: "Member", title: m.name, url: "member.html?id=" + m.id, text: "Writing on " + m.quality.toLowerCase() + ": " + m.qualityNote }); });
     S.builds.forEach(function (b) {
       var hits = b.paragraphs.map(function (p, i) { return matches(p, q) ? i : -1; }).filter(function (i) { return i >= 0; });
+      var ch = (b.contributions || []).filter(function (c) { return matches(c.text, q); });
+      if (!hits.length && ch.length) { res.push({ kind: slotName(b.n) + " by the whole team, " + member(ch[0].member).name + "’s contribution", title: b.title, url: buildUrl(b, "&q=" + encodeURIComponent(q) + "#contrib-" + ch[0].member), html: snippet(ch[0].text, q), score: 5 }); return; }
       if (hits.length || matches(b.title + b.summary + (b.bibliography || []).join(" "), q)) res.push({ kind: slotName(b.n) + " by " + byline(b) + (hits.length ? ", " + plural(hits.length, "paragraph") + " match" : ""), title: b.title, url: buildUrl(b, "&q=" + encodeURIComponent(q) + (hits.length ? "#p" + (hits[0] + 1) : "")), html: hits.length ? snippet(b.paragraphs[hits[0]], q) : mark(esc(b.summary), q), score: hits.length + 5 });
     });
     J.entries.forEach(function (e) {

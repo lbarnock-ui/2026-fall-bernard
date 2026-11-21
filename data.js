@@ -110,9 +110,53 @@ window.SITE = {
     {
       "n": 5,
       "name": "Build 5"
+    },
+    {
+      "n": 6,
+      "name": "Build 6"
     }
   ],
   "builds": [
+    {
+      "member": "team",
+      "n": 6,
+      "title": "Awareness without control",
+      "summary": "Our second group build pulls the six qualities together, one paragraph each, and concludes that consciousness may not free us from every cause, but it can change how we respond to one. Each member’s own contribution follows the team essay.",
+      "paragraphs": [
+        "Throughout our builds, we challenged the assumption that consciousness exists entirely within the individual, but Gell demonstrates how artworks extend human agency beyond the body. Through phenomenality, we experience objects not simply as passive creations, but as material expressions of another person's intentions, emotions, and experiences. We also recognize that our own interpretations give these objects new meanings and consequences. Like Scarry's understanding of making, Gell suggests that consciousness can shape physical reality through creation and interaction. We therefore see agency as something that moves between creators, objects, and viewers, allowing subjective experience to influence the world beyond ourselves.",
+        "Building upon this relationship between objects and human experience, we begin by questioning whether external influences can also shape our internal sense of self. Gell's Art and Agency supports our ideas of phenomenality, the felt quality of Scarry's \"what it's like to be me,\" because Gell describes patterns that seem to move as our eyes scan them. However, closer reading complicated this interpretation. Gell uses feeling primarily to explain our attachment to objects, while his distributed person is a third-person record, not an internal experience. Yet if a pattern's hold can paralyze a demon in Gell’s and mislead Eve in Milton’s, then feeling does causal work. This shifted our understanding of phenomenality from simply experiencing the world to recognizing how those experiences can influence our actions.",
+        "If external influences can shape our experiences, however, we must also consider how recognizing those influences affects our ability to reflect upon ourselves. Consider what happens when an artwork captures our attention. Gell shows that patterns can exert agency without possessing consciousness: their organization directs our eyes and shapes perception. Across our builds, we argue this influence becomes relevant to reflexivity when we recognize how our attention is guided. That recognition turns an immediate response into something we can examine and redirect. Our comparison with Scarry suggests that objects can extend the capacities through which we experience the world. Reflexivity, then, is not simply awareness of an object, but awareness of our own experience through encountering it—and a chance to change what follows.",
+        "However, our discussions also challenged whether recognizing an influence necessarily allows us to resist it. Through Gell, we discovered that intricate patterns can hold our attention even when we understand why they are difficult to resolve. This challenged our earlier view that recognizing the limits of perception was enough for meaningful deliberation. Milton’s Satan reveals a further problem: he recognizes how pride shapes his choices, yet refuses to reconsider them. We therefore see deliberation not simply as awareness, but as the ability to question an influence and consider another response. Consciousness may not free us from every cause, but it can change how we respond to one.",
+        "Furthermore, the influence of decisions may extend beyond the immediate moment in which they occur. A South Indian tattoo that a woman \"retained... post mortem\" (90), believed to guide her to her kin, demonstrates how an intention can persist beyond its creator's lifetime. The tattoo cannot choose anything, but it holds a choice that other minds can read. The Bhagavad Gita disagrees about what such traces mean. It treats actions that leave traces as binding, and praises actions that \"leave no trace behind\" (4.23). Still, both perspectives question whether the ordinary \"I\" makes these selections alone. If a selection can outlast the moment it was made, could consciousness shape events without performing any single action?",
+        "Ultimately, our discussions suggest that consciousness cannot be reduced to individual awareness or complete control over one's experiences. Through Gell, Scarry, Milton, and the Bhagavad Gita, we’ve explored how external objects, personal interpretations, and lasting consequences influence the formation of agency. Perhaps consciousness is not simply the ability to recognize these influences, but also the capacity to question them and consider how we respond. Although awareness does not always guarantee control, it may provide the foundation for reflection and deliberation, allowing us to navigate the forces that continually shape our experiences."
+      ],
+      "contributions": [
+        {
+          "member": "leah",
+          "text": "Consciousness is often portrayed as something contained within the individual, but Gell challenges this assumption by showing how artworks extend human agency beyond the body. Through phenomenality, we experience objects not simply as passive creations, but as material expressions of another person's intentions, emotions, and experiences. We also recognize that our own interpretations give these objects new meanings and consequences. Like Scarry's understanding of making, Gell suggests that consciousness can shape physical reality through creation and interaction. We therefore see agency as something that moves between creators, objects, and viewers, allowing subjective experience to influence the world beyond ourselves."
+        },
+        {
+          "member": "emily",
+          "text": "We began reading Gell’s Art and Agency as support for phenomenality, the felt quality of Scarry’s “what it’s like to be me,” because Gell says patterns seem to move as our eyes scan them. Closer reading complicated that claim, because Gell uses feeling mainly to explain how we bind to objects, his distributed person is a third- person record, not an internal view. Yet if a pattern’s hold can paralyze a demon in Gell and mislead Eve in Milton, then feeling does causal work too. Phenomenality may matter less as what we are than as what moves us."
+        },
+        {
+          "member": "robert",
+          "text": "Narration shapes action, but does it guarantee understanding? Through Gell’s decorative patterns, we found that consciousness connects past difficulties with future expectations, sustaining questioning even without a final answer. Yet our examination of apotropaic patterns revealed that attention alone is not sufficient; narration requires earlier experiences to alter later interpretations or actions, even when a purpose is externally imposed. Milton’s Eve exposes an even further limitation. Her expectations, shaped by Satan’s account, motivate action despite being mistaken. We, therefore, understand narration not as an escape from physical causality, but as a way to imagine future influences present choices whether wisely or not."
+        },
+        {
+          "member": "nidhi",
+          "text": "South Indian tattoo that a woman “retained... post mortem” (90), believed to guide her to her kin. The tattoo cannot choose anything, but it holds a choice that other minds can read. The Gita disagrees about what such traces mean. It treats actions that leave traces as binding, and praises actions that “leave no trace behind” (4.23). Still, both doubt that the ordinary “I” makes these selections alone. If a selection can outlast the moment it was made, could consciousness shape events without performing any single action?"
+        },
+        {
+          "member": "alejandro",
+          "text": "Consider what happens when an artwork captures our attention. Gell shows that patterns can exert agency without possessing consciousness: their organization directs our eyes and shapes perception. Across our builds, we argue this influence becomes relevant to reflexivity when we recognize how our attention is guided. That recognition turns an immediate response into something we can examine and redirect. Our comparison with Scarry suggests that objects can extend the capacities through which we experience the world. Reflexivity, then, is not simply awareness of an object, but awareness of our own experience through encountering it—and a chance to change what follows."
+        },
+        {
+          "member": "sakib",
+          "text": "Can recognizing an influence help us resist it? Through Gell, we found that intricate patterns can keep our attention even when we understand why they are difficult to resolve. This challenged our earlier view that recognizing the limits of perception was enough for meaningful deliberation. Milton’s Satan reveals a further problem: he understands how pride shapes his choices, yet refuses to reconsider them. We therefore see deliberation not simply as awareness, but as the ability to question an influence and consider another response. Consciousness may not free us from every cause, but it can change how we respond to one."
+        }
+      ]
+    },
     {
       "member": "team",
       "n": 2,
